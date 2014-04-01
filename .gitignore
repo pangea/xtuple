@@ -5,6 +5,7 @@
 *.deb
 node_modules
 npm-debug.log
+install.log
 scripts/private
 scripts/lib/temp_query*
 scripts/1
