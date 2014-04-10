@@ -6,6 +6,7 @@
 node_modules
 npm-debug.log
 install.log
+install.log.old
 scripts/private
 scripts/lib/temp_query*
 scripts/1
