@@ -15,7 +15,11 @@
     link href="/<%= org %>/client/lib/enyo-x/lib/onyx/css/onyx.less" rel="stylesheet/less"/>
     <link href="/<%= org %>/client/lib/enyo-x/source/less/screen.less" rel="stylesheet/less"/>
     -->
-    
+    <style>
+      .enyo-arranger > * {
+        position: relative;
+      }
+    </style>
     <!-- js -->
     <script src="/<%= org %>/locale"></script>
     <script src="/socket.io/socket.io.js?1.3.10" type="text/javascript"></script>
