@@ -261,6 +261,8 @@ white:true*/
     @returns {String}
     */
     getOrderStatusString: function () {
+      // FIXME: figure out why `this.formatStatus()` doesn't work here like it
+      //        does in the master branch when rendering Activities.  Magic?
       return XM.SalesOrderBaseMixin.formatStatus.call(this);
     }
   };
