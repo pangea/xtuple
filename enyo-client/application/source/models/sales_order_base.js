@@ -261,7 +261,7 @@ white:true*/
     @returns {String}
     */
     getOrderStatusString: function () {
-      return this.formatStatus();
+      return XM.SalesOrderBaseMixin.formatStatus.call(this);
     }
   };
 

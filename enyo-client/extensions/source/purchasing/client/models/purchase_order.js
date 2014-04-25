@@ -84,7 +84,7 @@ white:true*/
         @returns {String}
       */
       getPurchaseOrderStatusString: function () {
-        return this.formatStatus();
+        return XM.PurchaseOrderMixin.formatStatus.call(this);
       }
     };
 
