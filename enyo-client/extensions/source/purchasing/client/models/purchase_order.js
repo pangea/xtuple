@@ -84,7 +84,9 @@ white:true*/
         @returns {String}
       */
       getPurchaseOrderStatusString: function () {
-        return this.formatStatus();
+        // FIXME: figure out why `this.formatStatus()` doesn't work here like
+        //        does in the master branch when rendering Activities.  Magic?
+        return XM.PurchaseOrderMixin.formatStatus.call(this);
       }
     };
 

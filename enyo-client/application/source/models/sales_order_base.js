@@ -261,7 +261,9 @@ white:true*/
     @returns {String}
     */
     getOrderStatusString: function () {
-      return this.formatStatus();
+      // FIXME: figure out why `this.formatStatus()` doesn't work here like it
+      //        does in the master branch when rendering Activities.  Magic?
+      return XM.SalesOrderBaseMixin.formatStatus.call(this);
     }
   };
 
@@ -1025,7 +1027,7 @@ white:true*/
       // entity and notified the user of mismatch? then there's no
       // abraKadabra('shiptoAddress') if they hit a stray key while tabbing
       // through the form and the on/off problem is solved as a byproduct.
-      // we could address later the problem that the View knows more about which 
+      // we could address later the problem that the View knows more about which
       // attributes are shared in relations than the ORM
       //
       // If the address was manually changed, then clear shipto
