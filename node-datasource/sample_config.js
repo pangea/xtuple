@@ -68,7 +68,7 @@ newcap:true, noarg:true, regexp:true, undef:true, strict:true, trailing:true, wh
       hostname: "localhost",
       port: 5432,
       user: "admin",
-      password: "admin"
+      password: "partyHard"
     },
     biServer: {
       bihost: "localhost",
