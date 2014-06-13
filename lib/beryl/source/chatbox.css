@@ -1,0 +1,32 @@
+.chat-box {
+  height: 260px;
+  width: 200px;
+}
+.chat-box-title-holder {
+    padding: 4px 10px;
+    color: white;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+.chat-box-history {
+  height: 192px;
+  padding: 4px 10px;
+}
+.chat-box-input-holder {
+  display:block;
+}
+.chat-box-min {
+  padding-bottom: 14px;
+  position: absolute;
+  top: -6px;
+  right: 25px;
+}
+.chat-box-close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.chat-box-min:hover,
+.chat-box-close:hover {
+  cursor: pointer;
+}
