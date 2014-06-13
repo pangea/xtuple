@@ -10,6 +10,10 @@ jsonpatch = require("json-patch");
 SYS = {};
 XT = { };
 
+// Setup messenger
+EventEmitter = require('events').EventEmitter;
+messenger = new EventEmitter();
+
 (function () {
   "use strict";
 
@@ -72,7 +76,11 @@ XT = { };
   require("./lib/ext/smtp_transport");
 
   datasource.setupPgListeners(X.options.datasource.databases, {
-    email: X.smtpTransport.sendMail
+    email: X.smtpTransport.sendMail,
+    message: function(content, afterAction) {
+      messenger.emit('message', content);
+      afterAction('message heard', content);
+    }
   });
 
   if (typeof X.options.biServer !== 'undefined') {
@@ -101,7 +109,6 @@ XT = { };
   XT.session.loadSessionObjects(XT.session.PRIVILEGES, sessionOptions);
 
 }());
-
 
 /**
   Grab the version number from the package.json file.
@@ -425,7 +432,6 @@ X.log("node-datasource started on port: ", X.options.datasource.port);
 X.log("redirectServer started on port: ", X.options.datasource.redirectPort);
 X.log("Databases accessible from this server: \n", JSON.stringify(X.options.datasource.databases, null, 2));
 
-
 /**
  * Destroy a single session.
  * @param {Object} val - Session object.
@@ -643,6 +649,23 @@ io.of('/clientsock').authorization(function (handshakeData, callback) {
     ensureLoggedIn(function (session) {
       routes.queryDatabase("post", data.payload, session, callback);
     }, data && data.payload);
+  });
+
+  messenger.on('message', function listener(msg) {
+    try {
+      if(socket.disconnected) {
+        // guess we don't need this listener anymore, eh?
+        messenger.removeListener('message', listener);
+      }
+
+      if(msg.recipient == socket.handshake.session.passport.user.username) {
+        socket.emit('message', msg);
+      }
+    } catch(e) {
+      // um.... wat?
+      console.log(e);
+    }
+
   });
 
   // Tell the client it's connected.
