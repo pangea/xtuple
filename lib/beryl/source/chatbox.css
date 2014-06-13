@@ -30,3 +30,27 @@
 .chat-box-close:hover {
   cursor: pointer;
 }
+
+.chat-message {
+  margin-top: 5px;
+}
+
+.chat-message:first-child, .chat-message-continued {
+  margin-top: 0;
+}
+
+.chat-message-sender {
+  border-bottom: 1px solid #AAA;
+  margin-bottom: 5px;
+}
+
+.chat-message-sender-name {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.chat-message-time {
+  font-size: 0.8em;
+  color: #aaa;
+  float: right;
+}
