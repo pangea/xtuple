@@ -39,7 +39,7 @@ XT = { };
     // mostly for logging, make sure anything that wants to know can
     // easily find why we're shutting down
     X.SHUTDOWN_SIGNAL = signal;
-    X.io.console(X.StringBuffer.create({color: "blue", prefix: null}),
+    X.io.console(X.StringBuffer.create({color: "green", prefix: null}),
       "\n================================================" +
       "\n%@ CAUGHT - cleaning up before shutting down".f(signal.toUpperCase()) +
       "\n================================================"
@@ -57,7 +57,7 @@ XT = { };
     var i, sub;
 
     // special case where the desired output requires calling console directly
-    X.io.console(X.StringBuffer.create({ color: 'blue', prefix: null }),
+    X.io.console(X.StringBuffer.create({ color: 'green', prefix: null }),
       "\n================================================" +
       "\nXUPLE NODE.JS FRAMEWORK ({version})".f({ version: X.version || "N/A" }) +
       "\n================================================\n"
