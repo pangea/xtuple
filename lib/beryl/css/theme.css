@@ -1,3 +1,17 @@
 div {
-    color: blue;
+  color: blue;
 }
+
+#app_postbooks_navigator_applicationHeader > * {
+  background: inherit;
+  background-color: #535050;
+  height: 50px;
+  border: none;
+  margin: auto;
+}
+
+#app_postbooks_navigator_searchInput {
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
