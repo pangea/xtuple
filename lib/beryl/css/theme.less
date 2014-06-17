@@ -21,20 +21,20 @@
   #app_postbooks_navigator_sidebar {
     #app_postbooks_navigator_subModuleMenu{
       margin-top: 10px;
-      .enyo-list {
-        .enyo-list-port {
-          .enyo-list-page {
+    }
+    .enyo-list {
+      .enyo-list-port {
+        .enyo-list-page {
+          div {
+            padding: 0 10px 0 10px;
+            &:hover {
+              cursor: pointer;
+            }
             div {
-              padding: 0 10px 0 10px;
-              &:hover {
-                cursor: pointer;
-              }
-              div {
-                padding: 10px 0 10px 20px;
-                &.onyx-selected {
-                  background: #99cc33;
-                  color: #ffffff;
-                }
+              padding: 10px 0 10px 20px;
+              &.onyx-selected {
+                background: #99cc33;
+                color: #ffffff;
               }
             }
           }
