@@ -6,35 +6,35 @@
   line-height: 50px;
   text-align: center;
 }
-
 #app_postbooks_navigator_searchInput {
   border-radius: 10px;
   width: 30%;
   height: 55%;
 }
-
 #app_postbooks_navigator_control2 {
  text-align: left;
 }
-
 #app_postbooks_navigator_applicationActionHolder {
- border: none;
+  border-bottom: 2px solid #d8d8d8;
 }
 #app_postbooks_navigator_sidebarHolder {
   #app_postbooks_navigator_sidebar {
-    .enyo-list {
-      .enyo-list-port {
-        .enyo-list-page {
-          div {
-            padding: 0 10px 0 10px;
-            &:hover {
-              cursor: pointer;
-            }
+    #app_postbooks_navigator_subModuleMenu{
+      margin-top: 10px;
+      .enyo-list {
+        .enyo-list-port {
+          .enyo-list-page {
             div {
-              padding: 10px 0 10px 20px;
-              &.onyx-selected {
-                background: #99cc33;
-                color: #ffffff;
+              padding: 0 10px 0 10px;
+              &:hover {
+                cursor: pointer;
+              }
+              div {
+                padding: 10px 0 10px 20px;
+                &.onyx-selected {
+                  background: #99cc33;
+                  color: #ffffff;
+                }
               }
             }
           }
@@ -143,7 +143,7 @@
 /* } */
 .onyx-popup {
   font-size:16px;
-  border: 1px solid #d8d8d8;
+  border: 2px solid #d8d8d8;
   border-radius:0px;
   padding:0px;
   color:#333333;
@@ -396,7 +396,7 @@
   background:#ffffff;
   background-color:#ffffff;
   box-shadow:none;
-  border:1px solid #d8d8d8;
+  border:2px solid #d8d8d8;
   .onyx-menu-item.selected, .onyx-menu-item.selected:hover, .onyx-menu-item.active, .onyx-menu-item:active:hover {
     color: #ffffff;
     background:#99cc33;
