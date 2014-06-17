@@ -1,7 +1,48 @@
 .chat-box {
   height: 260px;
-  width: 200px;
+  width: 250px;
+  border-radius: 0px;
+  padding: 0 0 0 0px;
 }
+
+.chat-message-sender.from-me {
+  background: white;
+  color: rgb(31, 114, 156); 
+}
+
+.chat-message-sender.from-other {
+  background: white;
+  color: lightgray;
+}
+
+.from-me {
+  background: rgb(208, 230, 241);
+  color: black;
+}
+
+.from-other {
+  background: lightgray;
+  color: black;
+}
+
+.chat-box-history {
+  background: white;
+}
+
+.chat-box-input-holder {
+  background: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #99cc33;
+  padding-bottom: 6px;
+}
+
+
+.chat-box-title-holder {
+  background: gray;
+  padding: 0 0 0 0px;
+}
+
 .chat-box-title-holder {
     padding: 4px 10px;
     color: white;
@@ -51,6 +92,6 @@
 
 .chat-message-time {
   font-size: 0.8em;
-  color: #aaa;
+  color: black;
   float: right;
 }

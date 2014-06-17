@@ -9,26 +9,14 @@
 
 #app_postbooks_navigator_searchInput {
   border-radius: 10px;
+  width: 30%;
+  height: 55%;
 }
 
 #app_postbooks_navigator_control2 {
  text-align: left;
 }
 
-.chat-box {
-  background: ;
-  padding: 0 0 0 0px;
-}
-
-.chat-message > .from-me + div {
-  color: green;
-}
-
-.chat-message.chat-message-continued {
-  color: green;
-}
-
-
-.chat-box-title-holder {
-  background: gray;
+#app_postbooks_navigator_applicationActionHolder {
+ border: none;
 }
