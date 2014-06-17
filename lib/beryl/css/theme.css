@@ -21,7 +21,12 @@
 }
 
 #app_postbooks_navigator_input {
- width: 90%;
+  width: 90%;
+}
+
+.help-link {
+  color: white;
+  text-decoration: none;
 }
 
 .search-icon {
