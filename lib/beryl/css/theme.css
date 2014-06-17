@@ -6,17 +6,6 @@
   line-height: 50px;
   text-align: center;
 }
-#app_postbooks_navigator_searchInput {
-  border-radius: 10px;
-  width: 30%;
-  height: 55%;
-}
-#app_postbooks_navigator_control2 {
-  text-align: left;
-}
-#app_postbooks_navigator_applicationActionHolder {
-  border-bottom: 2px solid #d8d8d8;
-}
 #app_postbooks_navigator_sidebarHolder #app_postbooks_navigator_sidebar #app_postbooks_navigator_subModuleMenu {
   margin-top: 10px;
 }
@@ -1029,3 +1018,60 @@
 /* .onyx-blue { */
 /*   background-color:#35a8ee; */
 /* } */
+#app_postbooks_navigator_searchInput {
+  border-radius: 10px;
+  width: 30%;
+  height: 100%;
+}
+#app_postbooks_navigator_control2 {
+  text-align: left;
+}
+#app_postbooks_navigator_applicationActionHolder {
+  border: none;
+}
+#app_postbooks_navigator_applicationHeader > * {
+  background-color: #535050;
+  height: 50px;
+  border: none;
+  padding: 0 0 0 0px;
+  line-height: 50px;
+  text-align: center;
+}
+.top-search {
+  border-radius: 10px;
+  width: 30%;
+  height: 50%;
+  line-height: normal;
+  padding: 5px 10px 0px 10px;
+}
+#app_postbooks_navigator_input {
+  width: 90%;
+}
+.help-link {
+  color: white;
+  text-decoration: none;
+}
+.user-menu-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  box-shadow: none;
+}
+.user-menu-button.active {
+  box-shadow: none;
+  background-image: none;
+  border-top: none;
+}
+.search-icon {
+  float: right;
+}
+#app_postbooks_navigator_control2 {
+  text-align: left;
+}
+.logo {
+  width: 70%;
+  height: 50px;
+  padding: 5px 0px 5px 0px;
+}
