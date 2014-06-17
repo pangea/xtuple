@@ -11,6 +11,19 @@
   width: 30%;
   height: 55%;
 }
+
+.top-search {
+  border-radius: 10px;
+  width: 30%;
+  height: 50%;
+  line-height: normal;
+  padding: 5px 10px 0px 10px;
+}
+
+.search-icon {
+  float: right;
+}
+
 #app_postbooks_navigator_control2 {
   text-align: left;
 }
@@ -405,6 +418,7 @@
   color: black;
   /* background:inherit; */
 }
+
 /* .onyx-picker.onyx-menu-up { */
 /*   top:auto; */
 /*   bottom:0; */
@@ -1026,3 +1040,10 @@
 /* .onyx-blue { */
 /*   background-color:#35a8ee; */
 /* } */
+
+.logo {
+  width: 70%;
+  height: 50px;
+  padding: 5px 0px 5px 0px
+}
+
