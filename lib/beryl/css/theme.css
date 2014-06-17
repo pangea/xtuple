@@ -20,6 +20,10 @@
   padding: 5px 10px 0px 10px;
 }
 
+#app_postbooks_navigator_input {
+ width: 90%;
+}
+
 .search-icon {
   float: right;
 }
