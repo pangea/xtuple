@@ -3,15 +3,36 @@ div {
 }
 
 #app_postbooks_navigator_applicationHeader > * {
-  background: inherit;
   background-color: #535050;
   height: 50px;
   border: none;
-  margin: auto;
+  padding: 0 0 0 0px;
+  line-height: 50px;
+  text-align: center;
 }
 
 #app_postbooks_navigator_searchInput {
-  vertical-align: middle;
   border-radius: 10px;
 }
 
+#app_postbooks_navigator_control2 {
+ text-align: left;
+}
+
+.chat-box {
+  background: ;
+  padding: 0 0 0 0px;
+}
+
+.chat-message > .from-me + div {
+  color: green;
+}
+
+.chat-message.chat-message-continued {
+  color: green;
+}
+
+
+.chat-box-title-holder {
+  background: gray;
+}
