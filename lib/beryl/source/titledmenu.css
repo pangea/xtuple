@@ -2,4 +2,8 @@
     padding: 4px 10px;
     color: white;
     border-bottom: 1px solid #aaa;
+    background: #535050;
+}
+.titled-meny-list .onyx-menu-item {
+  padding: 10px;
 }
