@@ -33,12 +33,45 @@
     }
   }
 }
+
+.caret {
+  position: relative;
+  width: 125px;
+  &.active {
+    &:after {                                                                                                                                                                                            
+      color: white;                                                                                                                                                                                     
+      left:85%;                                                                                                                                                                                           
+      font-family:FontAwesome;                                                                                                                                                                            
+      font-weight:normal;                                                                                                                                                                                 
+      font-style:normal;                                                                                                                                                                                  
+      display:inline-block;                                                                                                                                                                               
+      text-decoration:inherit;                                                                                                        
+      content:"\f0d8";                                                                                                                                                                                     
+      position:absolute;                                                                                                                                                                                   
+      bottom:-3px;                                                                                                                                                                                        
+      font-size:26px;
+    }
+  }
+  &:after {                                                                                                                                                                                            
+    color:#ffffff;                                                                                                                                                                                     
+    left:85%;                                                                                                                                                                                           
+    font-family:FontAwesome;                                                                                                                                                                            
+    font-weight:normal;                                                                                                                                                                                 
+    font-style:normal;                                                                                                                                                                                  
+    display:inline-block;                                                                                                                                                                               
+    text-decoration:inherit;                                                                                                        
+    content:"\f0d7";                                                                                                                                                                                     
+    position:absolute;                                                                                                                                                                                   
+    bottom:-3px;                                                                                                                                                                                        
+    font-size:26px;
+  }
+}
 /* ONYX OVERRIDES BE CARFUL HERE */
 /* .buttonGradient { */
 /*   background-image:-moz-linear-gradient(top,rgba(233,233,233,0.2),rgba(197,197,197,0.2) 29%,rgba(150,150,150,0.2) 56%,rgba(142,142,142,0.2) 60%,rgba(100,100,100,0.2) 82%,rgba(89,89,89,0.2) 90%,rgba(180,180,180,0.2) 97%,rgba(220,220,220,0.2)); */
 /*   background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(233,233,233,0.2)),to(rgba(220,220,220,0.2)),color-stop(29%,rgba(197,197,197,0.2)),color-stop(56%,rgba(150,150,150,0.2)),color-stop(60%,rgba(142,142,142,0.2)),color-stop(82%,rgba(100,100,100,0.2)),color-stop(90%,rgba(89,89,89,0.2)),color-stop(97%,rgba(180,180,180,0.2))); */
 /*   background-image:-webkit-linear-gradient(top,rgba(233,233,233,0.2),rgba(197,197,197,0.2) 29%,rgba(150,150,150,0.2) 56%,rgba(142,142,142,0.2) 60%,rgba(100,100,100,0.2) 82%,rgba(89,89,89,0.2) 90%,rgba(180,180,180,0.2) 97%,rgba(220,220,220,0.2)); */
-/*   background-image:-o-linear-gradient(top,rgba(233,233,233,0.2),rgba(197,197,197,0.2) 29%,rgba(150,150,150,0.2) 56%,rgba(142,142,142,0.2) 60%,rgba(100,100,100,0.2) 82%,rgba(89,89,89,0.2) 90%,rgba(180,180,180,0.2) 97%,rgba(220,220,220,0.2)); */
+/*   background-image:-o-linear-gradient(top,rgba(233,233,233,0.2),rgba(197,197,197,0.2) 29%,rgba(150,
 /*   background-image:linear-gradient(top,rgba(233,233,233,0.2),rgba(197,197,197,0.2) 29%,rgba(150,150,150,0.2) 56%,rgba(142,142,142,0.2) 60%,rgba(100,100,100,0.2) 82%,rgba(89,89,89,0.2) 90%,rgba(180,180,180,0.2) 97%,rgba(220,220,220,0.2)); */
 /* } */
 /* .onyx { */
