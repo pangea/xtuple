@@ -2,7 +2,7 @@
   height: 260px;
   width: 250px;
   border-radius: 0px;
-  padding: 0 0 0 0px;
+  padding: 0 0 6px 0;
 }
 
 .chat-message-sender.from-me {
@@ -39,13 +39,15 @@
 .chat-box-history {
   background: white;
 }
-
 .chat-box-input-holder {
   background: white;
+  padding-bottom: 6px;
   border-style: solid;
   border-width: 3px;
+  border-color: #ffffff;
+}
+.chat-box-input-holder.onyx-focused {
   border-color: #99cc33;
-  padding-bottom: 6px;
 }
 
 .chat-box-title-holder {
