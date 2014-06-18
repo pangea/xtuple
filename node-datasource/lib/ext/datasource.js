@@ -376,11 +376,8 @@ Backbone:true, _:true, X:true, __dirname:true, exports:true, module: true */
           // requesting.
           eventHandlers[payload.action](payload.content, afterAction);
         });
-        var channels = ['nodext', 'messenger'];
-        channels.forEach(function(chan) {
-          client.query('LISTEN "%@"'.f(chan));
-        });
-        X.log("Listening for postgres notifications on the ", channels.join(', '), " channel(s) on ", database);
+        client.query('LISTEN "nodext"');
+        X.log("Listening for postgres notifications on the nodext channel on ", database);
       });
     });
   };
