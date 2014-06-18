@@ -37,9 +37,12 @@
   padding-bottom: 6px;
 }
 
+#app_postbooks_navigator_chatUserList_title {                                                                                                                                                              
+  background: #535050;                                                                                                                                                                           
+}      
 
 .chat-box-title-holder {
-  background: gray;
+  background: #535050;
   padding: 0 0 0 0px;
 }
 
