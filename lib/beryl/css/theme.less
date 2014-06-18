@@ -1,10 +1,118 @@
-#app_postbooks_navigator_applicationHeader > * {
-  background-color: #535050;
-  height: 50px;
-  border: none;
-  padding: 0 0 0 0px;
-  line-height: 50px;
-  text-align: center;
+@pangeaGreen: #99cc33;
+@borderGrey: #d8d8d8;
+
+#app_postbooks_navigator_applicationHeader {
+  > * {
+    background-color: #535050;
+    height: 50px;
+    border: none;
+    padding: 0 0 0 0px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+.logo-holder {
+  position:relative;
+
+  .logo {
+    position: absolute;
+    height: 26px;
+    padding: 0;
+    left: 10%;
+    top: 50%;
+    margin-top: -13px; /* half of the height */
+  }    
+}
+.user-menu-button {
+  background: none !important;
+  border: none !important;
+  padding: 0 10px 0 10px;
+  color: white;
+  text-decoration: none;
+  box-shadow: none !important;
+  position: relative;
+  width: 100%;
+  &:after {
+    color:#ffffff;
+    left:85%;                                     
+    font-family:FontAwesome;                      
+    font-weight:normal;                           
+    font-style:normal;                            
+    display:inline-block;                         
+    text-decoration:inherit;    
+    content:"\f0d7";                               
+    position:absolute;
+    right: 5px;
+    top: 2px;
+  }
+  &.active {
+    &:after {
+      content:"\f0d8";
+    }
+  }
+}
+
+.help-link {
+  color: white;
+  text-decoration: none;
+}  
+
+#app_postbooks_navigator_control2 {
+  text-align: left;
+
+  .top-search {
+    position: relative;
+    top: -2px; /* move backup from border pushing it down */
+    background: #ffffff;
+    border-radius: 20px;
+    border: 2px solid @pangeaGreen;
+    width: 30%;
+    height: 30px;
+    line-height: normal;
+    padding: 0 10px 0 10px;
+
+    #app_postbooks_navigator_searchInput {
+      border-radius: 10px;
+      width: 90%;
+      height: 100%;
+    }
+    &:before {
+      color: @pangeaGreen;
+      font-size: 39px;
+      right: 0px;
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      content: "\f111";
+      position: absolute;
+      right: 0px;
+      top: -4px;
+    }
+    &:after {
+      color: #ffffff;
+      font-size: 20px;
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      content: "\f002";
+      position: absolute;
+      right: 6px;
+      top: 5px;
+    }
+  }
+}
+
+#app_postbooks_navigator_applicationActionHolder {
+  border-bottom: 2px solid @borderGrey;
+}
+
+#app_postbooks_navigator_input {
+  width: 90%;
 }
 
 #app_postbooks_navigator_sidebarHolder {
@@ -31,39 +139,6 @@
         }
       }
     }
-  }
-}
-
-.caret {
-  position: relative;
-  width: 125px;
-  &.active {
-    &:after {                                                                                                                                                                                            
-      color: white;                                                                                                                                                                                     
-      left:85%;                                                                                                                                                                                           
-      font-family:FontAwesome;                                                                                                                                                                            
-      font-weight:normal;                                                                                                                                                                                 
-      font-style:normal;                                                                                                                                                                                  
-      display:inline-block;                                                                                                                                                                               
-      text-decoration:inherit;                                                                                                        
-      content:"\f0d8";                                                                                                                                                                                     
-      position:absolute;                                                                                                                                                                                   
-      bottom:-3px;                                                                                                                                                                                        
-      font-size:26px;
-    }
-  }
-  &:after {                                                                                                                                                                                            
-    color:#ffffff;                                                                                                                                                                                     
-    left:85%;                                                                                                                                                                                           
-    font-family:FontAwesome;                                                                                                                                                                            
-    font-weight:normal;                                                                                                                                                                                 
-    font-style:normal;                                                                                                                                                                                  
-    display:inline-block;                                                                                                                                                                               
-    text-decoration:inherit;                                                                                                        
-    content:"\f0d7";                                                                                                                                                                                     
-    position:absolute;                                                                                                                                                                                   
-    bottom:-3px;                                                                                                                                                                                        
-    font-size:26px;
   }
 }
 /* ONYX OVERRIDES BE CARFUL HERE */

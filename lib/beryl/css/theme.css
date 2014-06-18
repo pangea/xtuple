@@ -6,6 +6,100 @@
   line-height: 50px;
   text-align: center;
 }
+.logo-holder {
+  position: relative;
+}
+.logo-holder .logo {
+  position: absolute;
+  height: 26px;
+  padding: 0;
+  left: 10%;
+  top: 50%;
+  margin-top: -13px;
+  /* half of the height */
+}
+.user-menu-button {
+  background: none !important;
+  border: none !important;
+  padding: 0 10px 0 10px;
+  color: white;
+  text-decoration: none;
+  box-shadow: none !important;
+  position: relative;
+  width: 100%;
+}
+.user-menu-button:after {
+  color: #ffffff;
+  left: 85%;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\f0d7";
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}
+.user-menu-button.active:after {
+  content: "\f0d8";
+}
+.help-link {
+  color: white;
+  text-decoration: none;
+}
+#app_postbooks_navigator_control2 {
+  text-align: left;
+}
+#app_postbooks_navigator_control2 .top-search {
+  position: relative;
+  top: -2px;
+  /* move backup from border pushing it down */
+  background: #ffffff;
+  border-radius: 20px;
+  border: 2px solid #99cc33;
+  width: 30%;
+  height: 30px;
+  line-height: normal;
+  padding: 0 10px 0 10px;
+}
+#app_postbooks_navigator_control2 .top-search #app_postbooks_navigator_searchInput {
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+}
+#app_postbooks_navigator_control2 .top-search:before {
+  color: #99cc33;
+  font-size: 39px;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\f111";
+  position: absolute;
+  right: 0px;
+  top: -4px;
+}
+#app_postbooks_navigator_control2 .top-search:after {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\f002";
+  position: absolute;
+  right: 6px;
+  top: 5px;
+}
+#app_postbooks_navigator_applicationActionHolder {
+  border-bottom: 2px solid #d8d8d8;
+}
+#app_postbooks_navigator_input {
+  width: 90%;
+}
 #app_postbooks_navigator_sidebarHolder #app_postbooks_navigator_sidebar #app_postbooks_navigator_subModuleMenu {
   margin-top: 10px;
 }
@@ -21,36 +115,6 @@
 #app_postbooks_navigator_sidebarHolder #app_postbooks_navigator_sidebar .enyo-list .enyo-list-port .enyo-list-page div div.onyx-selected {
   background: #99cc33;
   color: #ffffff;
-}
-.caret {
-  position: relative;
-  width: 125px;
-}
-.caret.active:after {
-  color: white;
-  left: 85%;
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  content: "\f0d8";
-  position: absolute;
-  bottom: -3px;
-  font-size: 26px;
-}
-.caret:after {
-  color: #ffffff;
-  left: 85%;
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  content: "\f0d7";
-  position: absolute;
-  bottom: -3px;
-  font-size: 26px;
 }
 /* ONYX OVERRIDES BE CARFUL HERE */
 /* .buttonGradient { */
