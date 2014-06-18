@@ -12,6 +12,7 @@
 .logo-holder .logo {
   position: absolute;
   height: 26px;
+  width: auto;
   padding: 0;
   left: 10%;
   top: 50%;
