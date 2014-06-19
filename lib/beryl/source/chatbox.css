@@ -42,7 +42,16 @@
   color: #333333;
   padding: 5px;
 }
-
+.chat-message.chat-message-continued.from-me {
+  background: #d0e7f2;
+  color: #1589bc;
+  padding: 5px;
+}
+.chat-message.chat-message-continued.from-other {
+  background: #dfdfdf;
+  color: #333333;
+  padding: 5px;
+}
 .chat-bar-button {
   color: #FFFFFF;
   background: #333333;
