@@ -13,6 +13,12 @@
 }
 
 #app_postbooks_navigator_modulePicker {
+  .enyo-touch-scroller {
+    max-height: none !important;
+  }
+}
+
+#app_postbooks_navigator_modulePicker {
   top: 98px !important;
 }
 
@@ -62,6 +68,9 @@
     color: @pangeaGreen;
     font-size: 22px;
     padding: 8px 0 8px 0 !important;
+    &:active:hover:not([disabled]) {
+      border: none !important;
+    }
     &:after {
       color: @pangeaGreen;
       font-family:FontAwesome;
@@ -773,7 +782,7 @@
 .onyx-menu-item {
   /* display:block; */
   text-align: left;
-  padding: 0px 0 0px 30px
+  padding: 0px 0 0px 30px;
   border: none;
 }
 .onyx-menu-item:hover {

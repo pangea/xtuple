@@ -6,6 +6,9 @@
   line-height: 50px;
   text-align: center;
 }
+#app_postbooks_navigator_modulePicker .enyo-touch-scroller {
+  max-height: none !important;
+}
 #app_postbooks_navigator_modulePicker {
   top: 98px !important;
 }
@@ -52,6 +55,9 @@
   color: #99cc33;
   font-size: 22px;
   padding: 8px 0 8px 0 !important;
+}
+.btn-link.module-picker:active:hover:not([disabled]) {
+  border: none !important;
 }
 .btn-link.module-picker:after {
   color: #99cc33;
@@ -736,7 +742,7 @@
 .onyx-menu-item {
   /* display:block; */
   text-align: left;
-  padding: 0px 0 0px 30px
+  padding: 0px 0 0px 30px;
   border: none;
 }
 .onyx-menu-item:hover {
