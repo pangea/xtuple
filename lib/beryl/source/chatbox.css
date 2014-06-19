@@ -35,6 +35,14 @@
   border-radius: 0px;
   border-top: none;
 }
+.chat-bar-button:active:hover:not([disabled]) {
+  border-top: #ffffff !important;
+  box-shadow: none !important;
+}
+.chat-bar-button.active {
+  border-top: #ffffff !important;
+  box-shadow: none !important;
+}
 
 .chat-box-history {
   background: white;
