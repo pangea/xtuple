@@ -6,6 +6,9 @@
   line-height: 50px;
   text-align: center;
 }
+#app_postbooks_navigator_modulePicker {
+  top: 98px !important;
+}
 .logo-holder {
   position: relative;
 }
