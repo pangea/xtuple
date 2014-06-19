@@ -52,6 +52,9 @@
   color: #333333;
   padding: 5px;
 }
+#app_postbooks_navigator_workspace_chatUsersButton .chat-bar-button {
+  background: #99cc33 !important;
+}
 .chat-bar-button {
   color: #FFFFFF;
   background: #333333;
