@@ -178,37 +178,42 @@ strict: false*/
     components: [
       {kind: "Panels", arrangerKind: "CarouselArranger",
         fit: true, components: [
-        {kind: "XV.Groupbox", name: "mainPanel", components: [
-          {kind: "onyx.GroupboxHeader", content: "_overview".loc()},
-          {kind: "XV.ScrollableGroupbox", name: "mainGroup", fit: true,
+         {kind: "XV.Groupbox", name: "mainPanel", components: [
+           {kind: "onyx.GroupboxHeader", content: "_overview".loc()},
+           {kind: "XV.ScrollableGroupbox", name: "mainGroup", fit: true,
             classes: "in-panel", components: [
-            {kind: "XV.InputWidget", attr: "number"},
-            {kind: "XV.CheckboxWidget", attr: "isActive"},
-            {kind: "XV.InputWidget", attr: "name"},
-            {kind: "XV.AccountTypePicker", attr: "accountType"},
-            {kind: "XV.AccountWidget", attr: "parent", label: "_parent".loc()},
-            {kind: "XV.UserAccountWidget", attr: "owner"},
-            {kind: "onyx.GroupboxHeader", content: "_primaryContact".loc()},
-            {kind: "XV.ContactWidget", attr: "primaryContact",
-              showAddress: true, label: "_name".loc()},
-            {kind: "onyx.GroupboxHeader", content: "_secondaryContact".loc()},
-            {kind: "XV.ContactWidget", attr: "secondaryContact",
-              showAddress: true, label: "_name".loc()},
-            {kind: "XV.AccountCharacteristicsWidget", attr: "characteristics"},
-            {kind: "onyx.GroupboxHeader", content: "_notes".loc()},
-            {kind: "XV.TextArea", attr: "notes", fit: true}
-          ]}
-        ]},
-        {kind: "XV.AccountCommentBox", attr: "comments"},
-        {kind: "XV.Groupbox", name: "rolesPanel", title: "_roles".loc(),
-          components: [
-          {kind: "onyx.GroupboxHeader", content: "_roles".loc()},
-          {kind: "XV.ScrollableGroupbox", name: "rolesGroup", fit: true,
-            classes: "in-panel", components: []
-          }
-        ]},
-        {kind: "XV.AccountDocumentsBox", attr: "documents"},
-        {kind: "XV.AccountContactsBox", attr: "contactRelations"}
+              {kind: "XV.InputWidget", attr: "number"},
+              {kind: "XV.CheckboxWidget", attr: "isActive"},
+              {kind: "XV.InputWidget", attr: "name"},
+              {kind: "XV.AccountTypePicker", attr: "accountType"},
+              {kind: "XV.AccountWidget", attr: "parent", label: "_parent".loc()},
+              {kind: "XV.UserAccountWidget", attr: "owner"},
+              {kind: "onyx.GroupboxHeader", content: "_primaryContact".loc()},
+              {kind: "XV.ContactWidget", attr: "primaryContact",
+               showAddress: true, label: "_name".loc()},
+              {kind: "onyx.GroupboxHeader", content: "_secondaryContact".loc()},
+              {kind: "XV.ContactWidget", attr: "secondaryContact",
+               showAddress: true, label: "_name".loc()},
+              {kind: "XV.AccountCharacteristicsWidget", attr: "characteristics"},
+              {kind: "onyx.GroupboxHeader", content: "_notes".loc()},
+              {kind: "XV.TextArea", attr: "notes", fit: true}
+            ]}
+         ]},
+          {kind: "TabPanels",
+			     fit: true,
+			     components: [
+             {kind: "XV.AccountCommentBox", attr: "comments", content: "comments"},
+             {kind: "XV.Groupbox", name: "rolesPanel", title: "_roles".loc(), content: "_roles".loc(),
+              components: [
+                {kind: "onyx.GroupboxHeader", content: "_roles".loc()},
+                {kind: "XV.ScrollableGroupbox", name: "rolesGroup", fit: true,
+                 classes: "in-panel", components: []
+                }
+              ]},
+             {kind: "XV.AccountDocumentsBox", attr: "documents", content: ""},
+             {kind: "XV.AccountContactsBox", attr: "contactRelations"}
+			     ]
+		      }
       ]},
       {kind: "onyx.Popup", name: "savePromptPopup", centered: true,
         modal: true, floating: true, scrim: true,

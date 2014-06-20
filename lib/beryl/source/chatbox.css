@@ -78,11 +78,15 @@
   background: #ffffff;
 }
 .chat-box-input-holder {
+  display: block;
   background: #ffffff;
   padding-bottom: 6px;
   border-style: solid;
   border-width: 3px;
   border-color: #ffffff;
+}
+.chat-box-input-holder input {
+  width: 95%;
 }
 .chat-box-input-holder.onyx-focused {
   border-color: #99cc33;
@@ -102,9 +106,6 @@
 .chat-box-history {
   height: 192px;
   padding: 4px 10px;
-}
-.chat-box-input-holder {
-  display:block;
 }
 .chat-box-min {
   padding-bottom: 14px;
