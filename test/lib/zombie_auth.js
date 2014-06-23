@@ -114,6 +114,7 @@ Simplest possible usage:
       //
       // This is the login screen
       //
+
       browser
         .fill('id', username)
         .fill('password', password)
