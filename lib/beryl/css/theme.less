@@ -810,8 +810,10 @@
 /*   z-index:10; */
 /*   overflow:visible; */
 /* } */
-.onyx-picker-decorator .onyx-button {
-  padding:10px 18px;
+.onyx-picker-decorator {
+  .onyx-button {
+    padding:10px 18px;
+  }
 }
 .onyx-picker {
   top:0;
@@ -835,7 +837,8 @@
   .onyx-menu-item {
     /* display:block; */
     text-align: left;
-    padding: 10px 0 10px 30px;
+    text-overflow: ellipsis;
+    padding: 10px 18px;
     border: none;
   }
   .onyx-menu-item:hover {
