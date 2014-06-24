@@ -100,7 +100,7 @@ label.login-message-box.error {
 #login {
   position: relative;
   width: 280px;
-  margin: 80px auto;
+  margin: 12% auto;
   padding-bottom: 20px;
 }
 
@@ -164,8 +164,8 @@ label.login-message-box.error {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  background-color: #2f6c9d;
-  padding: 40px 50px 30px 50px;
+  background-color: #333333;
+  padding: 25px 50px 30px 50px;
   position: relative;
   overflow: visible;
   z-index: 2;
@@ -208,7 +208,7 @@ label.login-message-box.error {
   margin: 15px auto 7px auto;
   text-transform: uppercase;
   color: #ffffff;
-  text-shadow: #2f6c9d 2px 2px 1px;
+  text-shadow: #000000 2px 2px 1px;
 }
 
 #main .login-button {

@@ -1,5 +1,5 @@
 #app_postbooks_navigator_applicationHeader > * {
-  background-color: #535050;
+  background-color: #333333;
   height: 50px;
   border: none;
   padding: 0 0 0 0px;
@@ -1436,7 +1436,7 @@
   text-align: left;
 }
 #app_postbooks_navigator_applicationHeader > * {
-  background-color: #535050;
+  background-color: #333333;
   height: 50px;
   border: none;
   padding: 0 0 0 0px;
